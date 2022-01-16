@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Gallery</title>
+</head>
+
+<blockquote style="border: 2px solid #E6EEF6;">
+<style>
+body {
+  background-image: url('zip.jpg');
+}
+</style>
+
+<body>
+<style>
+aside {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+  float: right;
+  font-style: italic;
+}
+</style>
+
+<aside>
+	<a href="index.html">Home Page</a> |
+  <a href="biodata.html">My Biodata</a> |
+  <a href="experience.html">My Experience</a> |
+  <a href="education.html">My Education</a> |
+  <a href="family.html">My Family</a> |
+  <a href="gallery.html">My Gallery</a> |
+  <a href="contact.html">Contact</a>  
+</aside>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  font-family: Brush Script MT;
+  background-image: url('gallery.jpg');
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Style the text */
+#text {
+  background: #A8A8A8;
+  color: white; 
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+@keyframes slider{
+  0%{
+    left: 0%;
+  }
+  20%{
+    left: 0%;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  50%{
+    left: -200%;
+  }
+  95%{
+    left: -100%;
+  }
+}
+#slider{
+  overflow: hidden;
+}
+#slider figure img{
+  width: 100%;
+  float: left;
+}
+#slider figure{
+  position: relative;
+  width: 600%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slider infinite;
+}
+
+content {
+  font-family: georgia;
+  color: black;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  float: left;
+  background-image: url(smoke.jpg);
+  height: 400px; 
+}
+
+#note {
+  font-family: georgia;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 30px;
+  width: 30%;
+  background-image: url('paper2.jpg');
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+nav {
+  float: right;
+  text-align: center;
+  font-family: georgia;
+  height: 200p;
+  background-image: url(paper3.jpg);
+  padding: 30px;
+  width: 70%;
+}
+
+article {
+  font-family: georgia;
+  float: left;
+  padding: 30px;
+  text-align: center;
+  color: floralwhite;
+  width: 70%;
+  background-image: url('paper.jpg');
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+#right {
+  font-family: georgia;
+  color: floralwhite;
+  text-align: center;
+  float: left;
+  padding: 30px;
+  width: 100%;
+  background-image: url('concert.jpg');
+  height: 900px; /* only for demonstration, should be removed */
+}
+
+/* Create three columns/boxes that floats next to each other */
+text {
+  font-family: georgia;
+  color: floralwhite;
+  float: right;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+  background-image: url('mine.jpg');
+  height: 100px; /* only for demonstration, should be removed */
+}
+
+#border {
+  font-family: georgia;
+  color: #4E3A0F;
+  padding: 30px;
+  width: 40%;
+  float: left;
+  background-image: url('mine.jpg');
+  height: 690px; /* only for demonstration, should be removed */
+}
+
+#details {
+  font-family: georgia;
+  color: whitesmoke;
+  padding: 30px;
+  width: 60%;
+  background-image: url(mine.jpg);
+  float: right;
+  text-align: left;
+  height: 690px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 100px) {
+  content {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+
+<header>
+		<h1 style="font-size:80px"><b>My Gallery</h1></b>
+</header>
+
+<div id="text">  
+  <marquee scrolldelay="100" onmouseover ="this.stop()" onmouseout="this.start()" style="font-size-adjust: 16px;"><img src="smiley.gif" alt="Smiley face" style="width:16px;height:16px;">Welcome to My Website<img src="smiley.gif" alt="Smiley face" style="width:16px;height:16px;">Please show your support by following me through the social media provided. <img src="love.gif" alt="love" style="width:16px;height:16px;">  <b>Contact me through:-</b> <img src="email.png" alt="Email" style="width:16px;height:16px;"> E-mail: farhanah2910anuar@gmail.com | <img src="ws.gif" alt="WhatsApp" style="width:16px;height:16px;"> What's App: +60 13-285 2874 | <img src="ig.gif" alt="Instagram" style="width:16px;height:16px;"> Instagram: @phanahhh | <img src="twit.gif" alt="Twitter" style="width:16px;height:16px;"> Twitter: @phanahhh | <img src="fb.png" alt="Facebook" style="width:16px;height:16px;">Facebook: Farhanah Anuar </marquee>
+</div>
+
+<div id="slider">
+  <figure>
+    <img src="quote.jpg" style="width: 715px;height: 350px;">
+    <img src="quote1.jpg" style="width: 700px;height: 350px;">
+    <img src="quote3.jpg" style="width: 725px;height: 350px;">
+    <img src="quote2.jpg" style="width: 700px;height: 350px;">
+    <img src="quote4.jpg" style="width: 720px;height: 350px;">
+    <img src="quote5.jpg" style="width: 700px;height: 350px;">
+  </figure> 
+</div>
+
+<content>
+  <blockquote>
+    <h1><u style="text-align: left; background-color: #CFCFCF;">Let's get to know my favourite singers and songs:</u></h1>
+    <a href="https://www.aligatie.com/"><img src="ali.jpg" alt="singer" width="200px" height="200px" style="text-align: center;border: 2px solid #D8D6B6;"></a>
+    <h3><a href="https://www.instagram.com/aligatie/?hl=en"><img src="click.png" alt="ig" style="width:100px;height:50px;"></a></h3>
+</blockquote>
+</content>
+
+<div id="note">
+
+ <video id="aligatie" controls autoplay width="350" height="500" autoplay>
+ <source id="aligatie" src="aligatie.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+ </video>
+ <h3 style="color: black; background-color: #CFCFCF;">Ali Gatie's TikTok Video</h3>
+</div>
+
+<nav>
+  <blockquote>
+  <audio controls>
+  <source src="saytoyou.ogg" type="audio/ogg">
+  <source src="saytoyou.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+  <h3 style="color: black; background-color: #CFCFCF">My Favourite Song</h3>
+  </blockquote>
+ </nav>
+
+<article> 
+<video id="alivid" controls autoplay width="950" height="300" autoplay>
+ <source id="alivid" src="alivid.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+ </video>
+ <h3 style="color: black; background-color: #CFCFCF">Ali Gatie's Latest Song</h3>
+</article>
+
+<section>
+<div id="right">
+  <blockquote>
+   <h1><u style="color: black; background-color: whitesmoke;">My Favourite Food:</u></h1>
+   <img src="table.jpg" usemap="#image-map">
+   <map name="image-map">
+    <area target="" alt="My favorite brand drink" title="My favorite brand drink" href="https://starbucks.com.my/" coords="321,151,612,382" shape="rect">
+    <area target="" alt="My favorite brand dessert" title="My favorite brand dessert" href="https://www.auntieannes.com/" coords="208,404,580,619" shape="rect">
+   </map>
+  </blockquote>
+</div>
+
+<text>
+  <blockquote>
+    <h1><u style="color: black; background-color: whitesmoke;">My Small Business:</u></h1>
+  </blockquote>
+</text>
+</section>
+
+<div id="border">
+  <blockquote>
+    <img src="lysn.png" alt="my business" width="450px" height="600px" style="border: 2px solid whitesmoke;">
+  </blockquote>
+</div>
+
+<div id="details">
+  <blockquote>
+    <p style="font-size: 20px">Hi, I am a part time dropship. I sell women's clothing like;</p>
+<ol style="font-size: 20px;">
+  <li>Shirt/Blouse</li>
+  <li>Pants/Skirt</li>
+  <li>Shawl & Bawal</li>
+</ol>
+     <p style="font-size: 20px">My small business is named Lysn.My. I am very interested in the women's clothing industry since childhood and almost succeeded with the profits of the business I managed to buy an Iphone 7 smartphone to use as an electronic device to run a business and managed to buy Vacum wireless 2 in 1 which is almost worth RM400. This is a very proud achievement for me by only profiting from the dropship I do. My hope is that the small business I do will be more profitable and hopefully I will have the opportunity to open my own shop in the future.</p>
+     <h3>Support my small business by following my official business social media site;</h3>
+     <p>Click here.</p>
+     <a href="https://msha.ke/lysn.my/"><img src="icon.png" alt="Website Business" style="width:42px;height:42px;"></a>
+     <a href="https://www.instagram.com/lysn.my/"><img src="igbisnes.png" alt="Ig Business" style="width:42px;height:42px;"></a>
+     <a href="https://shp.ee/kvdjtft"><img src="shopeebisnes.png" alt="Shopee Business" style="width:47px;height:47px;"></a>
+     <a href="https://wa.link/kl60nv"><img src="wsbisne.png" alt="Ws Business" style="width:42px;height:42px;"></a>
+     <a href="https://t.me/lysnmy"><img src="telebisnes.png" alt="Tele Business" style="width:42px;height:42px;"></a>
+  </blockquote>
+</div>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+#text {
+  background: #A8A8A8;
+  color: white;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+/* Style the footer */
+footer {
+  font-family: arial, sans-serif;
+  background-color: #212526 ;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+</style>
+
+<div id="text">
+  <marquee scrolldelay="150" onmouseover ="this.stop()" onmouseout="this.start()" style="font-size-adjust: 16px;"><img src="love.gif" alt="love" style="width:16px;height:16px;"> <b>Do support my small business through:- </b><img src="ws.gif" alt="WhatsApp" style="width:16px;height:16px;"> What's App: +60 11-6384 4521 | <img src="shopee.gif" alt="Shopee" style="width:16px;height:16px;">Shopee: Lysn.My | <img src="ig.gif" alt="Instagram" style="width:16px;height:16px;"> Instagram: @lysn.my </marquee>
+</div>
+
+
+<footer>
+<details><summary>
+  <b><u>Reach Me Out</b></u></summary>
+  <p>farhanah2910anuar@gmail.com</p>
+  <p>0132852874</p>
+  <p>Malacca, Malaysia</p>
+</details>
+  <a href="https://www.instagram.com/phanahhh/">Instagram</a> |
+  <a href="https://wa.link/5g4pdd">WhatsApp</a> |
+  <a href="https://www.facebook.com/phanahhh">Facebook</a> |
+  <a href="https://www.farhanah2910anuar@gmail.com">Email</a>
+</footer>
+
+</body>
+</html>
